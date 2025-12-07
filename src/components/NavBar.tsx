@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-scroll';
 import Logo from './Logo';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -33,9 +34,9 @@ function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#beneficios" className="text-sm text-zinc-400 hover:text-white transition-colors">Benefícios</a>
-            <a href="#como-funciona" className="text-sm text-zinc-400 hover:text-white transition-colors">Como Funciona</a>
-            <a href="#developers" className="text-sm text-zinc-400 hover:text-white transition-colors">Developers</a>
+            <Link to="beneficios" smooth={true} duration={500} className="text-sm text-zinc-400 hover:text-white transition-colors cursor-pointer">Benefícios</Link>
+            <Link to="como-funciona" smooth={true} duration={500} className="text-sm text-zinc-400 hover:text-white transition-colors cursor-pointer">Como Funciona</Link>
+            <Link to="developers" smooth={true} duration={500}  className="text-sm text-zinc-400 hover:text-white transition-colors cursor-pointer">Developers</Link>
           </div>
 
           {/* Mobile Menu Button */}
