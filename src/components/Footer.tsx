@@ -21,9 +21,9 @@ function Footer () {
             © {new Date().getFullYear()} ExodusPay Angola. Todos os direitos reservados.
           </p>
           <div className="flex gap-6">
-             {/* <a href="#" className="text-zinc-500 hover:text-white transition-colors" aria-label="LinkedIn">
+             <a href="#" className="text-zinc-500 hover:text-white transition-colors" aria-label="LinkedIn">
                <Linkedin size={20} />
-             </a> */}
+             </a>
              <a href="https://www.instagram.com/exodus.pay" target="_blank" className="text-zinc-500 hover:text-white transition-colors" aria-label="Instagram">
                <Instagram size={20} />
              </a>
